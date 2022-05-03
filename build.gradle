@@ -23,6 +23,7 @@ plugins {
 }
 
 allprojects {
+  version = '8.24.2-PD'
   apply plugin: 'io.spinnaker.project'
 
   group = "io.spinnaker.orca"
@@ -36,7 +37,7 @@ allprojects {
 
 subprojects {
 
-  if ([korkVersion, fiatVersion].any { it.endsWith("-SNAPSHOT") }) {
+  if ([korkVersion, fiatVersion].any { it.endsWith("-SNAPSHOT") || it.endsWith("-PD")}) {
     logger.info("Enabling mavenLocal")
     repositories {
       mavenLocal()
