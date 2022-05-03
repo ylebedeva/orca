@@ -25,6 +25,9 @@ plugins {
 allprojects {
   version = '8.24.2-PD'
   apply plugin: 'io.spinnaker.project'
+  spinnakerCodeStyle {
+    enabled = false
+  }
 
   group = "io.spinnaker.orca"
 
