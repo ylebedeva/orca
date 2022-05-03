@@ -53,6 +53,7 @@ dependencies {
   implementation("com.jayway.jsonpath:json-path:2.2.0")
   implementation("org.yaml:snakeyaml")
   implementation("org.codehaus.groovy:groovy")
+  implementation("javax.validation:validation-api")
 
   compileOnly("org.projectlombok:lombok")
   annotationProcessor("org.projectlombok:lombok")
